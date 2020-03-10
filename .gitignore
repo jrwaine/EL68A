@@ -1,0 +1,8 @@
+*.cf
+*.obj
+ex01/output_files/*
+ex01/simulation/*
+ex01/simulation/modelsim/*
+ex01/incremental_db/*
+ex01/History/*
+ex01/db

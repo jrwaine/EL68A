@@ -1,0 +1,1 @@
+1) Monte um circuito que mostre o estado das chaves e se todas estão ligadas ou não.

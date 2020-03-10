@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity decoder is
+    port (  decoder_in : in unsigned (2 downto 0);
+            decoder_out : out unsigned (7 downto 0)
+    );
+end entity;
+
+architecture a_decoder of decoder is
+begin
+
+    decoder_out <= h"01" when decoder_in = "000" else
+		h"02" when decoder_in = "001" else
+		h"04" when decoder_in = "010" else
+		h"08" when decoder_in = "011" else
+		h"10" when decoder_in = "100" else
+		h"20" when decoder_in = "101" else
+		h"40" when decoder_in = "110" else
+		h"80" when decoder_in = "111" else
+		h"FF";
+
+end architecture;
+
